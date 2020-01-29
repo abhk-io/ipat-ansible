@@ -1,0 +1,18 @@
+---
+
+- hosts: client1
+  become: true
+  tasks:
+    - name: Configure website for client1
+      copy: src=index-client1.html dest=/var/www/html/index.html
+
+
+- hosts: client2
+  become: true
+  tasks:
+    - name: Configure website for client2
+      copy: src=index-client2.html dest=/var/www/html/index.html
+  
+
+
+...

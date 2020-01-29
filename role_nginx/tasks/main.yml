@@ -1,0 +1,10 @@
+---
+# tasks file for web_role
+
+- include: install.yaml
+- include: configure.yaml
+- include: service.yaml
+#
+#- import_playbook: install.yaml
+#- import_playbook: configure.yaml
+#- import_playbook: service.yaml

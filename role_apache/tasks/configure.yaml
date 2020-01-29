@@ -1,0 +1,7 @@
+---
+
+- become: yes
+  name: Configure website for client1
+  copy: src=index-client1.html dest=/var/www/html/index.html
+
+...

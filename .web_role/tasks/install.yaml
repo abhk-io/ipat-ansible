@@ -1,0 +1,14 @@
+---
+
+  - hosts: client1
+    become: true
+    tasks:
+    - name: install apache2
+      apt: name=apache2 update_cache=yes state=latest
+
+  - hosts: client2
+    become: true
+    tasks:
+    - name: install nginx 
+      apt: name=nginx state=latest
+

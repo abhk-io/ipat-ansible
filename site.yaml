@@ -1,0 +1,15 @@
+# This playbook deploys the whole application stack in this site.
+
+---
+
+- name: install_apache
+  hosts: client1
+  remote_user: yes
+  roles:
+    - role_apache
+
+- name: install_nginx
+  hosts: client2
+  remote_user: yes
+  roles:
+    - role_nginx

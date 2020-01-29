@@ -1,0 +1,6 @@
+---
+- name : deployit
+  roles:
+    - web_role
+
+...
